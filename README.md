@@ -1,7 +1,7 @@
 # Lab1-1_calculator
 lab1-1_calculator
 
-#1
+
 int main(void) {
   printf("Hello World!");
 }
