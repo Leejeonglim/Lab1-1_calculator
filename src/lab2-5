@@ -1,0 +1,34 @@
+if [ ! -p file ]
+then
+        str10="mkdir file"
+        eval $str10
+
+fi
+str="cd file"
+eval $str
+
+str0="vi file0.txt"
+str1="vi file1.txt"
+str2="vi file2.txt"
+str3="vi file3.txt"
+str4="vi file4.txt"
+eval $str
+eval $str0
+eval $str1
+eval $str2
+eval $str3
+eval $str4
+
+str7="mkdir files"
+eval $str7
+
+zip test.zip file0.txt file1.txt file2.txt file3.txt file4.txt
+
+str9="mv test.zip /home/oss/Desktop/Workplace/lab2/file/files"
+eval $str9
+
+
+str8="cd files"
+eval $str8
+
+unzip test.zip
